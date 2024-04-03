@@ -15,21 +15,28 @@
         <p> Somos la red social para tu mascota</p>
         <form>
             <label> Nombre: </label>
-            <input type="text" placeholder="Nombre de la mascota" required/> 
+            <input type="text" placeholder="Nombre de la mascota" required> 
             <br>
             <br>
             <label> Edad: </label>
-            <input type="number" placeholder="Edad de la mascota" required/> 
+            <input type="number" placeholder="Edad de la mascota" minlength="1" required> 
             <br>
             <br>
             <label> Correo electronico: </label>
-                <input type="email" placeholder="_____@_________.com" required/> 
+                <input type="email" placeholder="_____@_________.com" required> 
                 <br>
                 <br>
             <label> Contraseña: </label>
-                    <input type="password" placeholder="Contraseña" required/> 
+                    <input type="password" placeholder="8 caracteres" minlength="8" maxlength="8" required> 
                     <br>
                     <br>
+            <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="sexo_f" required>
+                    <label for="sexo_f">Hembra</label>
+                <input type="radio" name="sexo" id="sexo_m" required>
+                    <label for="sexo_m">Macho</label>
+                <br>
+                <br>
             <label for="color"> Color de tu mascota: </label>
                     <input class="radio" type="color" id="color" name="color" required>
         </form>

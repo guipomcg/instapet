@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InstaPet</title>
-    
+
     <link rel="stylesheet" href=style.css>
-    
+
 </head>
+
 <body>
     <div>
         <h1>Bienvenidos a InstaPet!!!</h1>
@@ -15,34 +17,58 @@
         <p> Somos la red social para tu mascota</p>
         <form>
             <label> Nombre: </label>
-            <input type="text" placeholder="Nombre de la mascota" required> 
+            <input type="text" placeholder="Nombre de la mascota" required>
             <br>
             <br>
             <label> Edad: </label>
-            <input type="number" placeholder="Edad de la mascota" minlength="1" required> 
+            <input type="number" placeholder="Edad de la mascota" minlength="1" required>
             <br>
             <br>
             <label> Correo electronico: </label>
-                <input type="email" placeholder="_____@_________.com" required> 
-                <br>
-                <br>
+            <input type="email" placeholder="_____@_________.com" required>
+            <br>
+            <br>
             <label> Contraseña: </label>
-                    <input type="password" placeholder="8 caracteres" minlength="8" maxlength="8" required> 
-                    <br>
-                    <br>
+            <input type="password" placeholder="8 caracteres" minlength="8" maxlength="8" required>
+            <br>
+            <br>
             <label for="sexo">Sexo:</label>
-                <input type="radio" name="sexo" id="sexo_f" required>
-                    <label for="sexo_f">Hembra</label>
-                <input type="radio" name="sexo" id="sexo_m" required>
-                    <label for="sexo_m">Macho</label>
-                <br>
-                <br>
+            <input type="radio" name="sexo" id="sexo_f" required>
+            <label for="sexo_f">Hembra</label>
+            <input type="radio" name="sexo" id="sexo_m" required>
+            <label for="sexo_m">Macho</label>
+            <br>
+            <br>
             <label for="color"> Color de tu mascota: </label>
-                    <input class="radio" type="color" id="color" name="color" required>
+            <input class="radio" type="color" id="color" name="color" required>
+            <label for="tipo_de_mascota">Tipo de Mascota:</label>
+            <select name="tipo_de_mascota" id="tipo_de_mascota">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br>
+            <br>
+            <label for="checkbox"> Acepto las bases y condiciones</label>
+            <input type="checkbox" name="bases_y_condiciones" id="bases_y_condiciones" value="Aceptar">
+            <br>
+            <br>
+            <label for="textarea"> Contanos sobre tu mascota: <br> <br> </label>
+            <textarea name="" id="" cols="40" rows="10"></textarea>
+            <br>
+            <br>
+        <button type="submit"> Enviar </button>
+        <br>
+        <br>
+            <span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.656327648678!2d-58.413900925147516!3d-34.587561556643564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8227c4a84d%3A0xa447627505edb885!2sPuppis%20Veterinaria%2C%20Peluquer%C3%ADa%20y%20Pet%20Shop!5e0!3m2!1ses-419!2sar!4v1712189684059!5m2!1ses-419!2sar" width="800" height=auto style="border:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MHOROM_PHoo?si=ppPnkGbLUfob-Orc" title="YouTube video player" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </span>
         </form>
         <br>
         <br>
-        <button type="submit"> Enviar </button>
-        </div>
+        
+    </div>
 </body>
+
 </html>
